@@ -148,11 +148,11 @@ public class CustomerControllerTests {
         Customer res = new Customer();
         res.firstName = "Anton" + postFix;
         res.lastName = "Romankov" + postFix;
-        res.mobilePhone = "+7923229" + (1516 + postFix);
+        res.mobile = "+7923229" + (1516 + postFix);
         res.email = "kalmarster" + postFix + "@gmail.com";
-        res.year = 1986 - postFix;
-        res.month = 10;
-        res.day = 18;
+        res.bdYear = 1986 - postFix;
+        res.bdMonth = 10;
+        res.bdDay = 18;
         return res;
     }
 

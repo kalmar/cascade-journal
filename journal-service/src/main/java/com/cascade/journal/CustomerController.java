@@ -66,10 +66,10 @@ public class CustomerController {
 
         old.setFirstName(customer.firstName);
         old.setLastName(customer.lastName);
-        old.setMobilePhone(customer.mobilePhone);
+        old.setMobilePhone(customer.mobile);
         old.setEmail(customer.email);
         old.setBirthDate(new GregorianCalendar(
-                customer.year, customer.month, customer.day));
+                customer.bdYear, customer.bdMonth, customer.bdDay));
 
         em.merge(old);
 

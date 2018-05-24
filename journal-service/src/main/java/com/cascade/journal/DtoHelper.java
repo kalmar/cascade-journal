@@ -14,11 +14,11 @@ public final class DtoHelper {
         result.id = origin.getId();
         result.firstName = origin.getFirstName();
         result.lastName = origin.getLastName();
-        result.mobilePhone = origin.getMobilePhone();
+        result.mobile = origin.getMobilePhone();
         result.email = origin.getEmail();
-        result.year = origin.getBirthDate().get(GregorianCalendar.YEAR);
-        result.month = origin.getBirthDate().get(GregorianCalendar.MONTH);
-        result.day = origin.getBirthDate().get(GregorianCalendar.DAY_OF_MONTH);
+        result.bdYear = origin.getBirthDate().get(GregorianCalendar.YEAR);
+        result.bdMonth = origin.getBirthDate().get(GregorianCalendar.MONTH);
+        result.bdDay = origin.getBirthDate().get(GregorianCalendar.DAY_OF_MONTH);
 
         return result;
     }
@@ -29,10 +29,10 @@ public final class DtoHelper {
         origin.setId(dto.id);
         origin.setFirstName(dto.firstName);
         origin.setLastName(dto.lastName);
-        origin.setMobilePhone(dto.mobilePhone);
+        origin.setMobilePhone(dto.mobile);
         origin.setEmail(dto.email);
         origin.setBirthDate(new GregorianCalendar(
-                dto.year, dto.month, dto.day));
+                dto.bdYear, dto.bdMonth, dto.bdDay));
         return origin;
     }
 
