@@ -19,7 +19,7 @@ import java.util.List;
 @RequestMapping("/customer")
 public class CustomerController {
 
-    private static Logger log = LoggerFactory.getLogger(CustomerController.class);
+    private static Logger log = LoggerFactory.getLogger(JournalApplication.class);
 
     @PersistenceContext
     private EntityManager em;
