@@ -15,13 +15,13 @@ Then to run docker rest service do following
 pushd journal-service
 
 # pull Postgres image
-docker image pull postgres:latest
+docker image pull postgres:10.4-alpine
 
 # build docker image for journal app
 mvn dockerfile:build
 
 # deploy
-docker stack deploy -c stack.yml journal
+docker stack deploy -c stack.yml journalapp
 
 popd
 ```
